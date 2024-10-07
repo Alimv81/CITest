@@ -10,8 +10,7 @@ public class Tests
     private Calculator _calculator { get; set; } = null!;
     
     [SetUp]
-    public void Setup()
-    {
+    public void Setup() {
         _calculator = new Calculator();
     }
 
