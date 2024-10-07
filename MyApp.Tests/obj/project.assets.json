@@ -328,6 +328,9 @@
       "NUnit.Analyzers/4.2.0": {
         "type": "package"
       },
+      "NUnit.ConsoleRunner/3.18.2": {
+        "type": "package"
+      },
       "NUnit3TestAdapter/4.6.0": {
         "type": "package",
         "build": {
@@ -345,6 +348,21 @@
           "lib/netstandard2.0/System.Reflection.Metadata.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "CITest/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Microsoft.NET.Test.Sdk": "17.11.1",
+          "NUnit": "4.2.2",
+          "NUnit.ConsoleRunner": "3.18.2"
+        },
+        "compile": {
+          "bin/placeholder/CITest.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CITest.dll": {}
         }
       }
     }
@@ -747,6 +765,78 @@
         "tools/uninstall.ps1"
       ]
     },
+    "NUnit.ConsoleRunner/3.18.2": {
+      "sha512": "jFKs/TucYtk9uzJFQMzWeYfwrnpHPz64WtOdVb5INhEQbXxuJrghqJtwzt6AiUNZYP3MoTLmUNSs+XKkhT6PHg==",
+      "type": "package",
+      "path": "nunit.consolerunner/3.18.2",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "NOTICES.txt",
+        "images/nunit_256.png",
+        "nunit.consolerunner.3.18.2.nupkg.sha512",
+        "nunit.consolerunner.nuspec",
+        "tools/agents/net462/nunit-agent-x86.exe",
+        "tools/agents/net462/nunit-agent-x86.exe.config",
+        "tools/agents/net462/nunit-agent.exe",
+        "tools/agents/net462/nunit-agent.exe.config",
+        "tools/agents/net462/nunit.console.nuget.agent.addins",
+        "tools/agents/net462/nunit.engine.api.dll",
+        "tools/agents/net462/nunit.engine.api.xml",
+        "tools/agents/net462/nunit.engine.core.dll",
+        "tools/agents/net462/testcentric.engine.metadata.dll",
+        "tools/agents/net6.0/Microsoft.Extensions.DependencyModel.dll",
+        "tools/agents/net6.0/nunit-agent.deps.json",
+        "tools/agents/net6.0/nunit-agent.dll",
+        "tools/agents/net6.0/nunit-agent.dll.config",
+        "tools/agents/net6.0/nunit-agent.runtimeconfig.json",
+        "tools/agents/net6.0/nunit.console.nuget.agent.addins",
+        "tools/agents/net6.0/nunit.engine.api.dll",
+        "tools/agents/net6.0/nunit.engine.api.xml",
+        "tools/agents/net6.0/nunit.engine.core.dll",
+        "tools/agents/net6.0/testcentric.engine.metadata.dll",
+        "tools/agents/net7.0/Microsoft.Extensions.DependencyModel.dll",
+        "tools/agents/net7.0/nunit-agent.deps.json",
+        "tools/agents/net7.0/nunit-agent.dll",
+        "tools/agents/net7.0/nunit-agent.dll.config",
+        "tools/agents/net7.0/nunit-agent.runtimeconfig.json",
+        "tools/agents/net7.0/nunit.console.nuget.agent.addins",
+        "tools/agents/net7.0/nunit.engine.api.dll",
+        "tools/agents/net7.0/nunit.engine.api.xml",
+        "tools/agents/net7.0/nunit.engine.core.dll",
+        "tools/agents/net7.0/testcentric.engine.metadata.dll",
+        "tools/agents/net8.0/Microsoft.Extensions.DependencyModel.dll",
+        "tools/agents/net8.0/nunit-agent.deps.json",
+        "tools/agents/net8.0/nunit-agent.dll",
+        "tools/agents/net8.0/nunit-agent.dll.config",
+        "tools/agents/net8.0/nunit-agent.runtimeconfig.json",
+        "tools/agents/net8.0/nunit.console.nuget.agent.addins",
+        "tools/agents/net8.0/nunit.engine.api.dll",
+        "tools/agents/net8.0/nunit.engine.api.xml",
+        "tools/agents/net8.0/nunit.engine.core.dll",
+        "tools/agents/net8.0/testcentric.engine.metadata.dll",
+        "tools/agents/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll",
+        "tools/agents/netcoreapp3.1/nunit-agent.deps.json",
+        "tools/agents/netcoreapp3.1/nunit-agent.dll",
+        "tools/agents/netcoreapp3.1/nunit-agent.dll.config",
+        "tools/agents/netcoreapp3.1/nunit-agent.runtimeconfig.json",
+        "tools/agents/netcoreapp3.1/nunit.console.nuget.agent.addins",
+        "tools/agents/netcoreapp3.1/nunit.engine.api.dll",
+        "tools/agents/netcoreapp3.1/nunit.engine.api.xml",
+        "tools/agents/netcoreapp3.1/nunit.engine.core.dll",
+        "tools/agents/netcoreapp3.1/testcentric.engine.metadata.dll",
+        "tools/nunit.console.nuget.addins",
+        "tools/nunit.engine.api.dll",
+        "tools/nunit.engine.api.xml",
+        "tools/nunit.engine.core.dll",
+        "tools/nunit.engine.dll",
+        "tools/nunit3-console.exe",
+        "tools/nunit3-console.exe.config",
+        "tools/testcentric.engine.metadata.dll"
+      ]
+    },
     "NUnit3TestAdapter/4.6.0": {
       "sha512": "R7e1+a4vuV/YS+ItfL7f//rG+JBvVeVLX4mHzFEZo4W1qEKl8Zz27AqvQSAqo+BtIzUCo4aAJMYa56VXS4hudw==",
       "type": "package",
@@ -794,10 +884,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "CITest/1.0.0": {
+      "type": "project",
+      "path": "../CITest.csproj",
+      "msbuildProject": "../CITest.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "CITest >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.10.0",
       "NUnit >= 4.1.0",
       "NUnit.Analyzers >= 4.2.0",
@@ -836,7 +932,11 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Asus\\RiderProjects\\CITest\\CITest.csproj": {
+              "projectPath": "C:\\Users\\Asus\\RiderProjects\\CITest\\CITest.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -895,5 +995,25 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-rc.1.24452.12/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: Microsoft.NET.Test.Sdk from 17.11.1 to 17.10.0. Reference the package directly from the project to select a different version. \r\n MyApp.Tests -> CITest -> Microsoft.NET.Test.Sdk (>= 17.11.1) \r\n MyApp.Tests -> Microsoft.NET.Test.Sdk (>= 17.10.0)",
+      "libraryId": "Microsoft.NET.Test.Sdk",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    },
+    {
+      "code": "NU1605",
+      "level": "Error",
+      "message": "Warning As Error: Detected package downgrade: NUnit from 4.2.2 to 4.1.0. Reference the package directly from the project to select a different version. \r\n MyApp.Tests -> CITest -> NUnit (>= 4.2.2) \r\n MyApp.Tests -> NUnit (>= 4.1.0)",
+      "libraryId": "NUnit",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
 }
