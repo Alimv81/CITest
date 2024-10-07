@@ -48,6 +48,20 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.11.1, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
+            "NUnit.ConsoleRunner": {
+              "target": "Package",
+              "version": "[3.18.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
